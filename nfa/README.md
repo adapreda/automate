@@ -5,14 +5,19 @@
   Fișierul nfa.in conține descrierea structurii unui automat finit nedeterminist cu tranziții epsilon (ε-NFA). Fiecare secțiune este urmată de simbolul |sfarsit, pentru a marca finalul ei.
 
   Structura fișierului este următoarea:
+  
 -> stari: lista tuturor stărilor automatului, separate prin virgulă.
   Exemplu: stari: q1,q2,q3,q4; |sfarsit
+  
 -> alfabet: simbolurile de intrare permise (fără epsilon), separate prin virgulă.
   Exemplu: alfabet: 0,1; |sfarsit
+  
 -> delta: lista tranzițiilor, fiecare de forma stare_curentă,simbol,stare_următoare, separate prin ; . Tranzițiile epsilon sunt notate cu "e".
   Exemplu: delta: q1,0,q1; q1,1,q1; q1,1,q2; q2,0,q3; q2,e,q3; q3,1,q4; q4,1,q4; q4,0,q4; |sfarsit
+  
 -> start: starea inițială a automatului.
   Exemplu: start: q1; |sfarsit
+  
 -> F: starea sau stările finale (doar una este folosită în acest script).
   Exemplu: F: q4; |sfarsit
 
