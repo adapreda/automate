@@ -14,6 +14,8 @@
 -> F: starea sau stările finale (doar una este folosită în acest script).
   Exemplu: F: q4; |sfarsit
 
+![image_alt](https://github.com/adapreda/automate/blob/b0048ffb1f64f9527f7271ed7d08e287073cb328/nfa/Screenshot%202025-05-24%20153611.pn)
+
     Modul de funcționare al emulatorului
   Emulatorul citește un automat finit nedeterminist cu tranziții epsilon (ε-NFA) dintr-un fișier de intrare (nfa.in) și simulează execuția acestuia pe un șir de simboluri introdus de utilizator. Pașii principali sunt:
 
