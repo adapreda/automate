@@ -18,9 +18,6 @@ def decrip(filename):
             if linie2[0] == 'alfabet':
                 linie = list(linie[0].strip().split(','))
                 automat[linie2[0]] = linie
-            if linie2[0] == 'banda':
-                linie = list(linie[0].strip().split(','))
-                automat[linie2[0]] = linie
             if linie2[0] == 'blank':
                 linie = list(linie[0].strip().split(','))
                 automat[linie2[0]] = linie
@@ -47,9 +44,6 @@ def criptare(automat):
             g.write("\n")
         if linie == 'alfabet':
             g.write(",".join(automat['alfabet']) + "; " + "|sfarsit")
-            g.write("\n")
-        if linie == 'banda':
-            g.write(",".join(automat['banda']) + "; " + "|sfarsit")
             g.write("\n")
         if linie == 'blank':
             g.write(",".join(automat['blank']) + "; " + "|sfarsit")
