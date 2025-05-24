@@ -26,3 +26,39 @@ Exemplu: start: q0; |sfarsit
 Exemplu: F: q3; |sfarsit
 
         Modul de functionare al emulatorului
+
+Emulatorul simulează pas cu pas execuția unei mașini Turing folosind configurația citită din fișierul turing.in și o bandă predefinită. Scopul este să determine dacă un șir de intrare este acceptat, în funcție de regulile de tranziție și stările finale ale mașinii.
+
+Pașii principali ai simulării:
+
+1. Citirea configurației din turing.in:
+
+-> Se încarcă stările, alfabetul, simbolul „blank” (_), tranzițiile (delta), starea de start și stările finale.
+
+-> Tranzițiile sunt de forma: stare_curentă, simbol_citit, stare_următoare, simbol_scris, direcție(R/L)
+
+2. Inițializarea benzii și a stării curente:
+
+-> Banda este o listă de simboluri (['1','1','+','1','1','_'], de exemplu).
+
+-> Capul de citire începe de la poziția 0, în starea de start.
+
+3. Executarea pașilor Turing:
+
+-> La fiecare pas, se caută o tranziție corespunzătoare stării curente și simbolului curent de pe bandă.
+
+-> Dacă există o tranziție: se rescrie simbolul curent, se actualizează starea, capul se mută la dreapta (R) sau la stânga (L), iar banda se extinde automat cu _ dacă este necesar la dreapta.
+
+4. Oprirea execuției:
+
+-> Dacă nu mai există nicio tranziție validă pentru configurația curentă, simularea se oprește.
+
+-> Dacă starea curentă este una dintre stările finale, cuvântul este acceptat.
+
+-> În caz contrar, cuvântul este respins.
+
+5. Rezultat și ieșire:
+
+-> La final, banda este afișată în starea finală, reflectând modificările produse de mașină.
+
+-> Configurația este salvată în fișierul turing.out.
