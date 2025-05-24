@@ -24,4 +24,4 @@ Exemplu: start: q1; |sfarsit
 -> F: stare sau stări finale, separate prin virgulă dacă sunt mai multe.
 Exemplu: F: q4; |sfarsit
 
-![image_alt]()
+![image_alt](https://github.com/adapreda/automate/blob/19fbb8f4a10f4bec812f3a77fd608d067a02f885/pda/Screenshot%202025-05-24%20160511.png)
