@@ -15,6 +15,8 @@
 
 ![image_alt](https://github.com/adapreda/automate/blob/7cca10599927401be62424fe41eb5cccc4998e29/dfa/Screenshot%202025-05-24%20155444.png)
 
+    Modul de functionare al emulatorului
+
   Automatul acceptă limbajul format din toate cuvintele peste alfabetul {0,1} care conțin o secvență ce duce automatul în starea q1, urmată imediat de simbolul 1, astfel încât execuția se termină în starea finală q2.
 
   Functia decrip(filename) deschide fisierul dfa.in si construieste un dictionar *automat* pe baza continutului. Se face parsing linie cu linie si se detecteaza tipul de informatie: stari, alfabet, tranzitii, stare de start sau stare finala.
