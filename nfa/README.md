@@ -1,5 +1,7 @@
   Acest proiect reprezintă un emulator pentru un automat finit nedeterminist cu tranziții epsilon (ε-NFA), implementat în Python. Programul permite citirea structurii automatului dintr-un fișier text (nfa.in), simulează execuția automatului pas cu pas pentru un șir de intrare oferit de utilizator, și determină dacă șirul este acceptat, ținând cont de tranzițiile epsilon. La final, automatul este salvat într-un fișier de ieșire (nfa.out) în același format.
 
+    Fisierul de configurare nfa.in
+
   Fișierul nfa.in conține descrierea structurii unui automat finit nedeterminist cu tranziții epsilon (ε-NFA). Fiecare secțiune este urmată de simbolul |sfarsit, pentru a marca finalul ei.
 
   Structura fișierului este următoarea:
